@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b5d63"><title>Symptom Checker | Care Compass</title><link rel="icon" href="assets/logo.svg"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head>
+<body data-page="symptoms"><header id="hdr"></header><main>
+<section class="ph"><div class="wrap"><h1 data-t="sy_h">Understand your symptoms</h1><p data-t="sy_p">Select what you are feeling to get simple guidance on what to do next.</p></div></section>
+<section><div class="wrap">
+<div class="row" style="justify-content:space-between;align-items:center"><h2 data-t="sy_q">What symptoms do you have?</h2><button class="btn dark" id="mic" data-t="mic">🎤 Speak your symptoms</button></div>
+<p class="heard" id="heard" aria-live="polite"></p>
+<div class="chips" id="common"></div>
+<p class="lbl" style="color:var(--red)" data-t="dg">Danger signs. Choose any that apply.</p>
+<div class="chips danger" id="danger"></div>
+<div class="fields"><div><label for="dur" data-t="du">How long have you had them?</label><select id="dur"><option value="" data-t="d0">Select</option><option value="1" data-t="d1">1 to 3 days</option><option value="2" data-t="d2">4 to 7 days</option><option value="3" data-t="d3">More than 7 days</option></select></div>
+<div><label for="age" data-t="ag">Who is unwell?</label><select id="age"><option value="" data-t="d0">Select</option><option value="child" data-t="child">Child</option><option value="adult" data-t="adult">Adult</option><option value="elder" data-t="elder">Older adult</option></select></div></div>
+<button class="btn red" id="go" data-t="go">Check symptoms</button>
+<p class="err" id="err" hidden data-t="err">Please choose a symptom, how long, and who is unwell.</p>
+<div class="result" id="res" aria-live="polite"><div class="rh"><span id="ri"></span><span id="rl"></span></div><div class="rb"><h2 id="rt"></h2><p id="rp"></p><p class="lbl" id="rwh" data-t="why_h">Why this result</p><ul id="rw"></ul><div class="row"><a class="btn dark" id="ra" href="#"></a><button class="btn alt" style="color:var(--teal)" id="rs" data-t="listen">🔊 Listen</button><a class="btn alt" style="color:var(--teal)" id="rwa" target="_blank" rel="noopener" data-t="share">Share on WhatsApp</a></div></div></div>
+<div class="disc"><strong data-t="imp">Important</strong><p data-t="sy_d">This checker gives general guidance only and is not a medical diagnosis. If you are worried or symptoms get worse, see a health professional.</p></div>
+</div></section>
+</main><div class="weave"></div><footer id="ftr"></footer><script src="script.js"></script></body></html>
